@@ -7,7 +7,7 @@ export const COINS = [
     {
         icon: EthIcon,
         symbol: "USDC",
-        netWorth: "12,838.83",
+        netWorth: "2,538.83",
         quantity: 1,
         chainLabel: "POL",
         percentageChange: "+2.5%",
