@@ -1,7 +1,7 @@
 import React from "react";
-import { ReadOnlyProps } from "../../../../global.types";
 
 import './layout.css'
+import { ReadOnlyProps } from "../../../global.types";
 
 interface LayoutProps {
   children: React.ReactNode;

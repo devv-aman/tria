@@ -14,8 +14,6 @@ const Onboarding = () => {
     const metaMaskAccount = useSelector(metaMaskAccount$.account);
     const userName = useSelector(metaMaskAccount$.userName);
 
-    console.log('⛳ @aman 🪵 Onboarding.tsx-15 - metaMaskAccount', metaMaskAccount)
-
     React.useEffect(() => {
         if (metaMaskAccount) {
             setOnboardingStep(1);
