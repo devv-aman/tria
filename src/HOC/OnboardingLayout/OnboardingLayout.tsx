@@ -27,6 +27,10 @@ const OnboardingLayout: React.FC<ReadOnlyProps<OnboardingLayoutProps>> = ({
     React.useEffect(() => {
       if(connected) {
         metaMaskAccount$.loading.set(false)
+      } else {
+        setTimeout(() => {
+            metaMaskAccount$.loading.set(false)
+        }, 2000);
       }
     }, [connected]);
 
