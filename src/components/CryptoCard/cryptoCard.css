@@ -1,0 +1,93 @@
+.cryptoCard__container {
+    padding: 0.75rem;
+    transition: all 350ms ease-in-out;
+    border-radius: 0.75rem;
+    cursor: pointer;
+}
+
+.cryptoCard__container:hover {
+    background-color: #252622;
+    transition: all 350ms ease-in-out;
+}
+
+.cryptoCard__container__coinContainer img {
+    width: 1rem;
+    aspect-ratio: 1;
+}
+
+.cryptoCard__container__chain {
+    margin-left: 0.75rem;
+}
+
+.cryptoCard__container__chain > p {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    text-align: left;
+    color: #fafafa;
+    margin-bottom: 0.2rem;
+}
+
+.cryptoCard__container__coinContainer {
+    border: 1px solid #fafafa14;
+    border-radius: 999px;
+    padding: 0.25rem;
+    transition: all 450ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.cryptoCard__container:hover .cryptoCard__container__coinContainer {
+    margin-right: 0.25rem;
+    max-width: 4rem;
+}
+
+.cryptoCard__container__coinContainer {
+    max-width: 25px;
+    overflow: hidden;
+}
+
+.cryptoCard__container__coinContainer p {
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 12px;
+    color: #fff;
+    margin-left: 0.25rem;
+}
+
+.cryptoCard__container__Networth {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1rem;
+    color: #fafafa;
+}
+
+.cryptoCard__container__quantity {
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 0.85rem;
+    text-align: right;
+    color: #fafafa4d;
+}
+
+.cryptoCard__container__Networth__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cryptoCard__container .embeddedWallet__container__assetsCard__assetsValuePerChange {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 1.75rem;
+    transition: all 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cryptoCard__container:hover
+    .embeddedWallet__container__assetsCard__assetsValuePerChange {
+    opacity: 1;
+    right: 4.75rem;
+}

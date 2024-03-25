@@ -1,0 +1,1 @@
+export { default as CreateTriaName } from "./CreateTriaName";

@@ -1,0 +1,91 @@
+.onboarding__container__createTriaName {
+    margin-top: 10rem;
+    padding: 1.25rem;
+    background: #fafafa0a;
+    border-radius: 1rem;
+    width: 24rem;
+}
+
+.onboarding__container__createTriaName > h2 {
+    color: #fafafab2;
+    font-size: 1.375rem;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.onboarding__container__createTriaName_inputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: #fafafa0a;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    border: 1px solid transparent;
+}
+
+.onboarding__container__createTriaName__tria {
+    position: absolute;
+    right: 1.25rem;
+    color: #fafafa4d;
+}
+
+.onboarding__container__createTriaName__usernameInput {
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: transparent;
+    transition: border 250ms ease-in-out;
+    color: #fff;
+    width: 75%;
+}
+
+.onboarding__container__createTriaName_inputContainer:focus-within {
+    border-bottom-color: rgba(127, 67, 255, 0.6);
+}
+
+.onboarding__container__createTriaName__usernameInput:focus {
+    outline: none;
+}
+
+.onboarding__container__createTriaName__nextBtn {
+    padding: 0.75rem 2.5rem;
+    border-radius: 1rem;
+}
+
+.onboarding__container__createTriaName__nextBtn__info {
+    padding: 1rem;
+    border: 1px solid #fafafa14;
+    border-radius: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.onboarding__container__createTriaName__nextBtn__info p {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 0.75rem;
+    text-align: left;
+    color: #fafafa4d;
+}
+
+.onboarding__container__createTriaName__nextBtn__info span {
+    color: #ffffff80;
+}
+
+.onboarding__container__createTriaName__nextBtn__info__lottie {
+    width: 2.5rem;
+    aspect-ratio: 1;
+    margin-right: 0.5rem;
+}
+
+.onboarding__container__createTriaName__errorContainer {
+    margin-top: 0.75rem;
+}
+
+.onboarding__container__createTriaName__error {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-left: 0.25rem;
+    line-height: 0.75rem;
+    color: #da4343;
+}
