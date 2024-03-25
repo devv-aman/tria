@@ -1,9 +1,7 @@
-import { Onboarding } from './screens'
+import { Onboarding } from "./screens";
 
-function App() {
-  return (
-    <Onboarding />
-  )
-}
+const App = () => {
+    return <Onboarding />;
+};
 
-export default App
+export default App;

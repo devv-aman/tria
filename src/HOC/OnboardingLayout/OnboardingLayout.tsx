@@ -1,5 +1,7 @@
 import React from "react";
 import Lottie from "lottie-react";
+import { useSelector } from "@legendapp/state/react";
+import { useSDK } from "@metamask/sdk-react";
 
 import { Layout } from "../Layout";
 
@@ -10,10 +12,8 @@ import GridLoader from "../../assets/lottie/grid_loader.json";
 import { ReadOnlyProps } from "../../../global.types";
 import { ONBOARDING } from "../../constants/strings";
 
-import "./onboardingLayout.css";
 import { metaMaskAccount$ } from "../../components/SocialLogin/SocialLogin";
-import { useSelector } from "@legendapp/state/react";
-import { useSDK } from "@metamask/sdk-react";
+import "./onboardingLayout.css";
 
 interface OnboardingLayoutProps {
     children: React.ReactNode;
@@ -25,13 +25,13 @@ const OnboardingLayout: React.FC<ReadOnlyProps<OnboardingLayoutProps>> = ({
     const { connected } = useSDK();
 
     React.useEffect(() => {
-      if(connected) {
-        metaMaskAccount$.loading.set(false)
-      } else {
-        setTimeout(() => {
-            metaMaskAccount$.loading.set(false)
-        }, 2000);
-      }
+        if (connected) {
+            metaMaskAccount$.loading.set(false);
+        } else {
+            setTimeout(() => {
+                metaMaskAccount$.loading.set(false);
+            }, 2000);
+        }
     }, [connected]);
 
     const loading = useSelector(metaMaskAccount$.loading);
@@ -55,14 +55,10 @@ const OnboardingLayout: React.FC<ReadOnlyProps<OnboardingLayoutProps>> = ({
                         {ONBOARDING.LOGIN_TO}
                     </p>
                     <p className="text-align-center onboarding__container__p">
-                        {ONBOARDING.TRIA_DEMO}
+                        <span>{ONBOARDING.TRIA}</span> {ONBOARDING.DEMO}
                     </p>
-                    {
-                      !loading && children
-                    }
-                    {
-                      loading && <div className="loading__emptyPlaceholder" />
-                    }
+                    {!loading && children}
+                    {loading && <div className="loading__emptyPlaceholder" />}
                     <div className="onboarding__container__powered_by_tria">
                         <img src={TriaGrey} alt="Tria" />
                         <p className="text-align-center onboarding__container__p">

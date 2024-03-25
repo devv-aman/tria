@@ -71,8 +71,8 @@ const CreateTriaName: React.FC<ReadOnlyProps<CreateTriaNameProps>> = () => {
                     <Lottie animationData={HeartAnimation} loop={true} />
                 </div>
                 <p>
-                    Your <span>@tria</span> is like Gmail, for Web3. Pay, receive and
-                    log-in to apps on any device, and blockchain.
+                    {ONBOARDING.YOUR} <span>{ONBOARDING["@tria"]}</span>{" "}
+                    {ONBOARDING.TRIA_INFO}
                 </p>
             </div>
         </div>

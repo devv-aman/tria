@@ -1,1 +1,2 @@
-export { default as Onboarding } from './Onboarding/Onboarding'
+export * from "./EmbeddedWallet";
+export * from "./Onboarding";

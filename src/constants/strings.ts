@@ -1,6 +1,7 @@
 export const ONBOARDING = {
     LOGIN_TO: "Login to",
-    TRIA_DEMO: "tria Demo",
+    TRIA: "tria",
+    DEMO: "Demo",
     CONTINUE_WITH_GOOGLE: "Continue with Google",
     CONTINUE_WITH_X: "Continue with X (formerly Twitter)",
     METAMASK: "Metamask",
@@ -11,4 +12,11 @@ export const ONBOARDING = {
     USERNAME: "Username",
     NEXT: "Next",
     "@tria": "@tria",
-}
+    TRIA_INFO:
+        "is like Gmail, for Web3. Pay, receive and log-in to apps on any device, and blockchain.",
+    YOUR: "Your",
+    ASSETS_UP: "Assets Up",
+    BUY: "Buy",
+    SEND: "Send",
+    CRYPTO: "Crypto",
+};
